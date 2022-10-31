@@ -8,5 +8,9 @@ pipeline {
                 git 'https://github.com/utsab818/DevopsProject.git'
             }
          }
+
+         stage('Unit Testing') {
+            sh 'mvn test'
+         }
     }
 }
